@@ -14,6 +14,11 @@ hello World
 Download node and run on cmd by
 node filename 
 
+
+main fundamentals:
+HTML -- Structure
+CSS -- Styling
+JS -- functionality
 */
 
 
