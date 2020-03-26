@@ -47,3 +47,26 @@ function fun3(){
     }
     console.log("outside ",f);
 }
+
+function square_root(n){
+    return Math.sqrt(n);
+}
+
+function square_root1(n){
+    console.log(Math.sqrt(n));
+
+    return ;
+}
+
+function square_root2(n){
+    console.log(Math.sqrt(n));
+
+    return 5;
+}
+
+function square_root3(n){
+    console.log(Math.sqrt(n));
+
+    return "hello USER";
+}
+
