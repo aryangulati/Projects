@@ -3,11 +3,13 @@
 first manner will move to the top of the stack  
 second type of function will not be hoisted */
 
+//function declaration
 function square_root(n){
     console.log("In first square root function");
     return;
 }
-//  Function  Hoisting 
+//  Function  Hoisting
+//function expression
 var sqrt_n=function(){
     console.log("In second square root function");
     return;
