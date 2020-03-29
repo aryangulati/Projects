@@ -2,13 +2,14 @@
 
 //allow to create objects without defining the class
 //One way of creating javascript (JSON) -Javascript Object Notation 
+
 var bird ={
     x :100,
     y: 20,
     color: "blue",// string
     eggs:["one","two","three","four"],//array
     fly:function(){
-        console.log("Bird is flying"this.x,this.y);
+        console.log("Bird is flying",this.x,this.y);
     //this here refer to the current object of the bird class
     }
 
