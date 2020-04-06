@@ -18,7 +18,7 @@ canvas.addEventListener("click",f);
 
 //if we want to  know what key got pressed than
 function f2(e){
-    console.log("a key got presssed",e.key)// if we just print e
+    console.log("a key got presssed",e.key)// if we just print e it contains information and various attributes
 }
 document.addEventListener("keydown",f2);
 //we can add control by using event listeners
