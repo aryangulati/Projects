@@ -65,6 +65,9 @@ function update(){
   //to move the rect in the pacticular field
   if(rect.x>W-rect.w||rect.x<0){
     rect.speed*=-1;
+
+
+    
   }
 
 }
