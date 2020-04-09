@@ -7,10 +7,17 @@ function init(){
         color:"blue",
         cells:[],
         direction:"right",
+        
 
-        // CreateSnake:function(){
-        //     for(var i=this)
-        // }
+        createsnake:function(){
+            for(var i=this.init_len;i>0;i--){
+                this.cells.push({x:i,y:0});
+            }
+        },
+        // drawsnake:function(){
+        //     pen.fillReact(this.cells[i])
+
+        },
 
 
     };
