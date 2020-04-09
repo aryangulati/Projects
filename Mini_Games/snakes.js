@@ -1,11 +1,24 @@
 function init(){
-    var canvas = document.getElementById("mycanvas");
+    var canvas = document.getElementById('mycanvas');
     W=H=canvas.width = canvas.height = 1000;
+    pen=canvas.getContext('2d');
+    snake ={
+        init_len: 5,
+        color:"blue",
+        cells:[],
+        direction:"right",
+
+        // CreateSnake:function(){
+        //     for(var i=this)
+        // }
+
+
+    };
 
 }
 
 
-function(){
+function draw(){
 //console.log("In Draw");
 
 }
