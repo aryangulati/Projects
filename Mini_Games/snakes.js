@@ -28,6 +28,14 @@ function init(){
         },
         updatesnake:function(){
             console.log("updatition in snake");
+            this.cells.pop();
+
+            var headX =this.cells[0].x;
+            var headY =this.cells[0].y;
+
+            var X= headX +1;
+            var Y= headY;
+            this.cells.unshift({x:X,y:Y});
         },
 
 
@@ -39,12 +47,15 @@ function init(){
 
 function draw(){
 //console.log("In Draw");
+pen.clearRect(0,0,W,H);
 snake.drawsnake();
 }
 
 function update(){
     //console.log("In Update");
 snake.updatesnake();    
+
+
 }
 
 function gameloop(){
