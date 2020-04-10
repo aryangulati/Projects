@@ -1,12 +1,14 @@
 function init(){
-    var canvas = document.getElementById('mycanvas');
+    canvas = document.getElementById('mycanvas');
     W=H=canvas.width = canvas.height = 1000;
     pen=canvas.getContext('2d');
+    cs=40;
     snake ={
         init_len: 5,
         color:"blue",
         cells:[],
         direction:"right",
+        
         
 
         createsnake:function(){
@@ -14,20 +16,25 @@ function init(){
                 this.cells.push({x:i,y:0});
             }
         },
-        // drawsnake:function(){
-        //     pen.fillReact(this.cells[i])
+        drawsnake:function(){
+            for(var i=0;i<this.cells.length;i++){
+                pen.fillStyle = this.color;
+                pen.fillRect(this.cells[i].x*cs,this.cells[i].y*cs,cs-2,cs-2);
+            }
+           
 
         },
 
 
     };
+    snake.createsnake();
 
 }
 
 
 function draw(){
 //console.log("In Draw");
-
+snake.drawsnake();
 }
 
 function update(){
@@ -35,7 +42,8 @@ function update(){
 }
 
 function gameloop(){
-
+draw();
+update();
 }
 
 init();
