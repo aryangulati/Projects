@@ -19,10 +19,15 @@ function init(){
         drawsnake:function(){
             for(var i=0;i<this.cells.length;i++){
                 pen.fillStyle = this.color;
-                pen.fillRect(this.cells[i].x*cs,this.cells[i].y*cs,cs-2,cs-2);
+                pen.fillRect(this.cells[i].x*cs,this.cells[i].y*cs,cs-3,cs-3);
             }
+
+           
            
 
+        },
+        updatesnake:function(){
+            console.log("updatition in snake");
         },
 
 
@@ -39,6 +44,7 @@ snake.drawsnake();
 
 function update(){
     //console.log("In Update");
+snake.updatesnake();    
 }
 
 function gameloop(){
