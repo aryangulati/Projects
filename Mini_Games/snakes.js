@@ -26,6 +26,8 @@ function init(){
            
 
         },
+
+        
         updatesnake:function(){
             console.log("updatition in snake");
             this.cells.pop();
