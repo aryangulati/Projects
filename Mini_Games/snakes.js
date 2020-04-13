@@ -1,14 +1,18 @@
 function init(){
+    //docment object is directly accissble in js code
+    // we can find canavs obj by its id "mycnavas"
     canvas = document.getElementById('mycanvas');
     W=H=canvas.width = canvas.height = 1000;
-    pen=canvas.getContext('2d');
+    pen=canvas.getContext('2d');//pen object to draw something on canvas
     cs=40;
+
+    //snake object 
     snake ={
         init_len: 5,
         color:"blue",
         cells:[],
         direction:"right",
-        
+
         
 
         createsnake:function(){
@@ -43,6 +47,11 @@ function init(){
 
     };
     snake.createsnake();
+    //add a event listener on document object
+    function keypressed(e){
+        console.log("key pressed",e.key);//as we want specefic property of the object that is key so e.key
+    }
+    document.addEventListener('keydown',keypressed)
 
 }
 
