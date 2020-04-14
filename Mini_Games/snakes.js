@@ -6,11 +6,18 @@ function init(){
     canvas = document.getElementById('mycanvas');
     W=H=canvas.width = canvas.height = 1000;
     pen=canvas.getContext('2d');//pen object to draw something on canvas
-    cs=40;
+    cs=66;
     game_over=false;
-    //create a image object for food
-    food_img =new Image();
-    food_img="Assests/apple.png";
+    score = 5;
+
+
+	//Create a Image Object for food
+	food_img = new Image();
+    food_img.src = "Assets/apple.png";
+    
+
+    trophy = new Image();
+	trophy.src = "Assets/trophy.png";
 
 
     food=getrandomfood();
@@ -62,6 +69,7 @@ function init(){
             if(headX==food.x && headY==food.y){
                 console.log("food eaten");
                 food = getrandomfood();
+                score++;
             }
             else{
             this.cells.pop();
@@ -137,8 +145,16 @@ function draw(){
 //console.log("In Draw");
 pen.clearRect(0,0,W,H);
 snake.drawsnake();
+
 pen.fillStyle = food.color;
 pen.drawImage(food_img,food.x*cs,food.y*cs,cs,cs);
+
+pen.drawImage(trophy,18,20,cs,cs);
+pen.fillStyle = "blue";
+pen.font = "20px Roboto"
+pen.fillText(score,50,50);
+    
+
 }
 
 function update(){
