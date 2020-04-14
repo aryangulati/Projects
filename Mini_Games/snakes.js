@@ -33,15 +33,43 @@ function init(){
 
         
         updatesnake:function(){
-            console.log("updatition in snake");
-            this.cells.pop();
+            // console.log("updatition in snake");
+            // this.cells.pop();
 
+            // var headX =this.cells[0].x;
+            // var headY =this.cells[0].y;
+
+            // var X= headX +1;
+            // var Y= headY;
+            // this.cells.unshift({x:X,y:Y});
+            console.log("updatition in snake according to the direction property ");
+            this.cells.pop();
             var headX =this.cells[0].x;
             var headY =this.cells[0].y;
 
-            var X= headX +1;
-            var Y= headY;
-            this.cells.unshift({x:X,y:Y});
+            var nextX,nextY;
+            if(this.direction=="right"){
+                nextX=headX + 1;
+                nextY = headY;
+            }
+            else if(this.direction=="left"){
+                nextX=headX - 1;
+                nextY = headY;
+            }
+            else if(this.direction=="down"){
+                nextX = headX;
+                nextY = headY+ 1;
+            }
+            else{
+                nextX=headX ;
+                nextY = headY- 1;
+            }
+            this.cells.unshift({x:nextX,y:nextY});
+
+
+
+
+
         },
 
 
@@ -49,7 +77,23 @@ function init(){
     snake.createsnake();
     //add a event listener on document object
     function keypressed(e){
-        console.log("key pressed",e.key);//as we want specefic property of the object that is key so e.key
+        //console.log("key pressed",e.key);//as we want specefic property of the object that is key so e.key
+        //we can use conditional statements
+        if(e.key=="ArrowRight"){
+            snake.direction="right";
+        }
+        if(e.key=="ArrowLeft"){
+            snake.direction="left";
+        }
+        if(e.key=="ArrowDown"){
+            snake.direction="down";
+        }
+        if(e.key=="ArrowUp"){
+            snake.direction="up";
+        }
+        console.log(snake.direction);
+
+
     }
     document.addEventListener('keydown',keypressed)
 
