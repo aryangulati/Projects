@@ -10,7 +10,7 @@ function init(){
     game_over=false;
     //create a image object for food
     food_img =new Image();
-    food_img="Assests/apple.png";
+    food_img=""
 
 
     food=getrandomfood();
@@ -138,7 +138,7 @@ function draw(){
 pen.clearRect(0,0,W,H);
 snake.drawsnake();
 pen.fillStyle = food.color;
-pen.drawImage(food_img,food.x*cs,food.y*cs,cs,cs);
+pen.fillRect(food.x*cs,food.y*cs,cs,cs);
 }
 
 function update(){
