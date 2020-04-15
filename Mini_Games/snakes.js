@@ -6,7 +6,7 @@ function init(){
     canvas = document.getElementById('mycanvas');
     W=H=canvas.width = canvas.height = 1000;
     pen=canvas.getContext('2d');//pen object to draw something on canvas
-    cs=66;
+    cs=40;
     game_over=false;
     score = 5;
 
