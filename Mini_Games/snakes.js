@@ -3,7 +3,7 @@
 function init(){
     //docment object is directly accissble in js code
     // we can find canavs obj by its id "mycnavas"
-    canvas = document.getElementById('mycanvas');
+    var canvas = document.getElementById('mycanvas');
     W=H=canvas.width = canvas.height = 1000;
     pen=canvas.getContext('2d');//pen object to draw something on canvas
     cs=40;
@@ -11,13 +11,13 @@ function init(){
     score = 5;
 
 
-	//Create a Image Object for food
-	food_img = new Image();
-    food_img.src = "Assets/apple.png";
+	// //Create a Image Object for food
+	// food_img = new Image();
+    // food_img.url = "Assets/apple.png";
     
 
-    trophy = new Image();
-	trophy.src = "Assets/trophy.png";
+    // trophy = new Image();
+	// trophy.src = "Assets/trophy.png";
 
 
     food=getrandomfood();
@@ -149,10 +149,10 @@ snake.drawsnake();
 pen.fillStyle = food.color;
 pen.drawImage(food_img,food.x*cs,food.y*cs,cs,cs);
 
-pen.drawImage(trophy,18,20,cs,cs);
-pen.fillStyle = "blue";
-pen.font = "20px Roboto"
-pen.fillText(score,50,50);
+// pen.drawImage(trophy,18,20,cs,cs);
+// pen.fillStyle = "blue";
+// pen.font = "20px Roboto"
+// pen.fillText(score,50,50);
     
 
 }
