@@ -9,6 +9,7 @@ function init(){
     cs=40;
     game_over=false;
     score = 5;
+    
 
 
 	// //Create a Image Object for food
