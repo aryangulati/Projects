@@ -12,9 +12,9 @@ function init(){
     
 
 
-	// //Create a Image Object for food
-	// food_img = new Image();
-    // food_img.url = "Assets/apple.png";
+	//Create a Image Object for food
+	food_img = new Image();
+    food_img.url = "Assets/apple.png";
     
 
     // trophy = new Image();
