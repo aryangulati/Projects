@@ -21,6 +21,7 @@ const words = ["india",
 "usa",
 "ethiopia",
 "oman",
+"italy",
 "indonesia"];
 
 let selectedWord = words[Math.floor(Math.random() * words.length)];
