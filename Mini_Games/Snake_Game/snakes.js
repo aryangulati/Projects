@@ -1,5 +1,3 @@
-
-
 function init(){
     //docment object is directly accissble in js code
     // we can find canavs obj by its id "mycnavas"
@@ -15,7 +13,10 @@ function init(){
 
     food=getrandomfood();
 
+
+
     //snake object 
+    
     snake ={
         init_len: 5,
         color:"blue",
