@@ -1,14 +1,14 @@
 function init(){
     //docment object is directly accissble in js code
     // we can find canavs obj by its id "mycnavas"
-    canvas = document.getElementById('mycanvas');
+    var canvas = document.getElementById('mycanvas');
     W=H=canvas.width = canvas.height = 1000;
     pen=canvas.getContext('2d');//pen object to draw something on canvas
-    cs=40;
+    cs=66.5;
     game_over=false;
-    //create a image object for food
-    food_img =new Image();
-    food_img=""
+    // //create a image object for food
+    // food_img =new Image();
+    // food_img=""
 
 
     food=getrandomfood();
