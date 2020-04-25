@@ -6,11 +6,12 @@ function init(){
     pen=canvas.getContext('2d');//pen object to draw something on canvas
     cs=66.5;
     game_over=false;
-    // //create a image object for food
-    // food_img =new Image();
-    // food_img=""
-
-
+    score=5;
+    //create a image object for food
+    food_img =new Image();
+    food_img.src="https://user-images.githubusercontent.com/42711978/80275257-b7663c80-86fd-11ea-86f9-7f4be24ceac4.png";
+    trophy =new Image();
+    trophy.src = "https://user-images.githubusercontent.com/42711978/80277339-e2578d00-870b-11ea-8f6d-99eca26292fd.png";
     food=getrandomfood();
 
 
@@ -63,6 +64,7 @@ function init(){
             if(headX==food.x && headY==food.y){
                 console.log("food eaten");
                 food = getrandomfood();
+                score++;
             }
             else{
             this.cells.pop();
@@ -93,7 +95,7 @@ function init(){
             //write logic that prevents snake to comes out
             var last_x = Math.round(W/cs);
             var last_y =Math.round(H/cs);
-            if(this.cells[0].y<0 || this.cells[0].x < 0 || this.cells[0].x > last_x || this.cells[0].y > last_y){
+            if(this.cells[0].y<0 || this.cells[0].x < 0 || this.cells[0].x > last_x-1 || this.cells[0].y > last_y-1){
 				game_over = true;
 			}
 
@@ -139,7 +141,11 @@ function draw(){
 pen.clearRect(0,0,W,H);
 snake.drawsnake();
 pen.fillStyle = food.color;
-pen.fillRect(food.x*cs,food.y*cs,cs,cs);
+pen.drawImage(food_img,food.x*cs,food.y*cs,cs,cs);
+pen.drawImage(trophy,10,20);
+pen.fillStyle="blue";
+pen.font ="50px Roboto";
+pen.fillText(score,35,60);
 }
 
 function update(){
