@@ -10,9 +10,7 @@ void grid_input(){
 
             
             cin>>grid[i][j];
-
-
-        }
+            }
     }
 }
 
