@@ -29,10 +29,9 @@ void grid_print(){
 
 
 void solve_sudo(int row,int col){
-
     
 
-    
+
     if(row==n && col==0){
 
 
