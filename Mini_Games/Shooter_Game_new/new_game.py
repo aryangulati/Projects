@@ -11,8 +11,8 @@ pygame.display.set_caption("New Game")
 x = 50
 y = 50
 width = 40
-height = 60
-vel= 5
+height = 40
+vel= 20
 
 #start by making run variable
 run= True
@@ -28,6 +28,35 @@ while run:
         if event.type==pygame.QUIT:
             #break the loop
             run = False
+
+    # make it dynmaic and move our character then we need to setup a list
+    keys =pygame.key.get_pressed()
+    # to check that if our keys is pressed we can use if statement 
+    if keys[pygame.K_LEFT]:
+        #here we are just checking which has appreared from the list and using vel to increase or decrease it
+        x-=vel
+        #we have to move our char by the vel in the direction 
+
+    if keys[pygame.K_RIGHT]:
+        x+=vel
+    
+    if keys[pygame.K_UP]:
+        y-=vel
+
+    if keys[pygame.K_DOWN]:
+        y+=vel
+
+    #to overcome the problem of continous drawing  charchter 
+    # so we need to fill the win before drawing another one
+    # so here parameters are color we have to match with background so using black that is 000 in RGB
+    win.fill((0,255,0))
+    #draw a rectangle u can draw any polygon 
+    #it has first para meter surface that is on window and secondly color that is RGB 
+    #then it takes x,y width and heights
+    pygame.draw.rect(win,(255,0,0),(x,y,width,height))
+    # to show some character or anything on window we have to refresh the display 
+    pygame.display.update()    
+
 
 #ends the program and closes window for us 
 pygame.quit()
