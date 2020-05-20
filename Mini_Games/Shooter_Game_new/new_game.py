@@ -32,18 +32,18 @@ while run:
     # make it dynmaic and move our character then we need to setup a list
     keys =pygame.key.get_pressed()
     # to check that if our keys is pressed we can use if statement 
-    if keys[pygame.K_LEFT]:
+    if keys[pygame.K_LEFT] and x > vel:
         #here we are just checking which has appreared from the list and using vel to increase or decrease it
         x-=vel
         #we have to move our char by the vel in the direction 
 
-    if keys[pygame.K_RIGHT]:
+    if keys[pygame.K_RIGHT] and x< 1000-width-vel:
         x+=vel
     
-    if keys[pygame.K_UP]:
-        y-=vel
+    if keys[pygame.K_UP] and y > vel:
+        y-=vel 
 
-    if keys[pygame.K_DOWN]:
+    if keys[pygame.K_DOWN] and y< 600-height-vel:
         y+=vel
     #if keys[pygame.K_7]:
     #    x+=vel
