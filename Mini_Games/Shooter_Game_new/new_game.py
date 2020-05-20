@@ -45,6 +45,9 @@ while run:
 
     if keys[pygame.K_DOWN]:
         y+=vel
+    #if keys[pygame.K_7]:
+    #    x+=vel
+    #    y+=vel   
 
     #to overcome the problem of continous drawing  charchter 
     # so we need to fill the win before drawing another one
