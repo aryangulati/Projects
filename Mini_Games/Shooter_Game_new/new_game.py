@@ -62,6 +62,8 @@ while run:
             if jumpCount <0:
                 neg=-1
             y-=(jumpCount**2)*0.5*neg
+
+            
             jumpCount-=1
 
         else:
