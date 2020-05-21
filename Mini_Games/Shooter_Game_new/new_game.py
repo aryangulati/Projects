@@ -14,6 +14,10 @@ width = 40
 height = 40
 vel= 20
 
+
+isJump=False
+jumpCount=10
+
 #start by making run variable
 run= True
 
@@ -39,15 +43,30 @@ while run:
 
     if keys[pygame.K_RIGHT] and x< 1000-width-vel:
         x+=vel
-    
-    if keys[pygame.K_UP] and y > vel:
-        y-=vel 
+    if not(isJump):
+        #so they cant move up and down while jumping and too not jump while jumping
+        if keys[pygame.K_UP] and y > vel:
+            y-=vel 
+        
 
-    if keys[pygame.K_DOWN] and y< 600-height-vel:
-        y+=vel
-    #if keys[pygame.K_7]:
-    #    x+=vel
-    #    y+=vel   
+        if keys[pygame.K_DOWN] and y< 600-height-vel:
+            y+=vel
+        #if keys[pygame.K_7]:
+        #    x+=vel
+        #    y+=vel   
+        if keys[pygame.K_SPACE]:
+            isJump=True
+    else:
+        if jumpCount>=-10:
+            neg=1
+            if jumpCount <0:
+                neg=-1
+            y-=(jumpCount**2)*0.5*neg
+            jumpCount-=1
+
+        else:
+            isJump =False
+            jumpCount =10        
 
     #to overcome the problem of continous drawing  charchter 
     # so we need to fill the win before drawing another one
