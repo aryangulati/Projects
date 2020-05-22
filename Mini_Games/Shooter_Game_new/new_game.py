@@ -64,12 +64,13 @@ while run:
             y-=(jumpCount**2)*0.5*neg
 
 
+            
             jumpCount-=1
 
         else:
             isJump =False
             jumpCount =10
-                    
+
 
     #to overcome the problem of continous drawing  charchter 
     # so we need to fill the win before drawing another one
