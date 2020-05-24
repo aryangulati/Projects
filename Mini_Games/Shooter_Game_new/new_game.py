@@ -21,7 +21,6 @@ bg = pygame.image.load('bg.jpg')
 
 
 
-
 #standing image of our char in the game 
 char = pygame.image.load('standing.png')
 
