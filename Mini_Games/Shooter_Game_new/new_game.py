@@ -20,6 +20,8 @@ walkLeft = [pygame.image.load('L1.png'), pygame.image.load('L2.png'), pygame.ima
 bg = pygame.image.load('bg.jpg')
 
 
+
+
 #standing image of our char in the game 
 char = pygame.image.load('standing.png')
 
