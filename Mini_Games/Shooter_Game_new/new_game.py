@@ -102,6 +102,7 @@ while run:
         x-=vel
         #we have to move our char by the vel in the direction 
 
+
         #as we dont want to confuse the program so we making
         left =True
         right =False
