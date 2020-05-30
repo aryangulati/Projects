@@ -29,6 +29,8 @@ clock =pygame.time.Clock()
 
 #intailise a class called player!!
 
+
+
 x = 50
 y = 400
 width = 40 # if any pro change it to 64
