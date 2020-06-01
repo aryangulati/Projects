@@ -17,6 +17,8 @@ walkLeft = [pygame.image.load('L1.png'), pygame.image.load('L2.png'), pygame.ima
 
 
 
+
+
 # background image
 bg = pygame.image.load('bg.jpg')
 
