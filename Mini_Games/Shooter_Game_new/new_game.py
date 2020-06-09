@@ -27,24 +27,67 @@ char = pygame.image.load('standing.png')
 clock =pygame.time.Clock()
 
 #intailise a class called player!!
+class player(object):
+
+    #this class can be used for making more man 
+
+    def __init__(self,x,y,width,height):
+        self.x=x
+        self.y=y
+        self.width=width
+        self.height=height
+        self.vel=5
+        self.isJump=False
+        self.jumpCount=10
+        self.left=False
+        self.right=False
+        self.walkCount=0
+
+
+    def draw(self,win):
+            #we are replacing rectangle with char 
+        if self.walkCount +1 >=27:
+            #we have nine char images and frame rate for displaying each would be 3
+            self.walkCount=0
+        if self.left:
+            win.blit(walkLeft[self.walkCount//3],(self.x,self.y)) 
+            self.walkCount+=1  
+        elif self.right:
+            win.blit(walkRight[self.walkCount//3],(self.x,self.y)) 
+            self.walkCount+=1   
+        else:
+            win.blit(char,(self.x,self.y))    
+    
+
+
+#removing all because we are making classes and objects
+# x = 50
+# y = 400
+# width = 40 # if any pro change it to 64
+# height = 40
+# vel= 20
+
+# left=False
+# right=False
+
+# walkCount=0
+
+
+# isJump=False
+# jumpCount=10
+    
 
 
 
-x = 50
-y = 400
-width = 40 # if any pro change it to 64
-height = 40
-vel= 20
 
-left=False
-right=False
 
-walkCount=0
+
+
 
 #making a function for a drawing window
 def redrawGameWindow():
     #changing the variable so we can use it everywhere
-    global walkCount
+    #global walkCount
 
     #to overcome the problem of continous drawing  charchter 
     # so we need to fill the win before drawing another one
@@ -56,29 +99,19 @@ def redrawGameWindow():
     #it has first para meter surface that is on window and secondly color that is RGB 
     #then it takes x,y width and heights
     #pygame.draw.rect(win,(255,0,0),(x,y,width,height))
-    #we are replacing rectangle with char 
-    if walkCount +1 >=27:
-        #we have nine char images and frame rate for displaying each would be 3
-        walkCount=0
-    if left:
-        win.blit(walkLeft[walkCount//3],(x,y)) 
-        walkCount+=1  
-    elif right:
-        win.blit(walkRight[walkCount//3],(x,y)) 
-        walkCount+=1  
-    else:
-        win.blit(char,(x,y))    
+
+    man.draw(win)
+
+
 
     # to show some character or anything on window we have to refresh the display 
     pygame.display.update()    
 
 
 
-isJump=False
-jumpCount=10
-
 #start by making run variable
 run= True
+man=player(300,410,64,64) #instattaion of class obj
 
 while run:
     #using delay so making clk in pygame so things don't happen quick
@@ -100,27 +133,27 @@ while run:
     # make it dynmaic and move our character then we need to setup a list
     keys =pygame.key.get_pressed()
     # to check that if our keys is pressed we can use if statement 
-    if keys[pygame.K_LEFT] and x > vel:
+    if keys[pygame.K_LEFT] and man.x > man.vel:
         #here we are just checking which has appreared from the list and using vel to increase or decrease it
-        x-=vel
+        man.x-=man.vel
         #we have to move our char by the vel in the direction 
 
         #as we dont want to confuse the program so we making
-        left =True
-        right =False
+        man.left =True
+        man.right =False
 
-    elif keys[pygame.K_RIGHT] and x< 500-width-vel:
-        x+=vel
-        left =False
-        right =True
+    elif keys[pygame.K_RIGHT] and man.x< 500-man.width-man.vel:
+        man.x+=man.vel
+        man.left =False
+        man.right =True
 
     else:
-        left =False
-        right =False
-        walkCount=0
+        man.left =False
+        man.right =False
+        man.walkCount=0
 
 
-    if not(isJump):
+    if not(man.isJump):
         #so they cant move up and down while jumping and too not jump while jumping
         #we cant move down and up as their is no need of it!
        # if keys[pygame.K_UP] and y > vel:
@@ -134,24 +167,24 @@ while run:
         #    y+=vel   
         if keys[pygame.K_SPACE]:
             #also while we are jumping we are not suppose to be moving
-            left =False
-            right =False
-            walkCount=0
-            isJump=True
+            man.left =False
+            man.right =False
+            man.walkCount=0
+            man.isJump=True
     else:
-        if jumpCount>=-10:
+        if man.jumpCount>=-10:
             neg=1
-            if jumpCount <0:
+            if man.jumpCount <0:
                 neg=-1
-            y-=(jumpCount**2)*0.5*neg
+            man.y-=(man.jumpCount**2)*0.5*neg
 
 
 
-            jumpCount-=1
+            man.jumpCount-=1
 
         else:
-            isJump =False
-            jumpCount =10
+            man.isJump =False
+            man.jumpCount =10
             
     redrawGameWindow()
 
