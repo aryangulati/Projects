@@ -1,7 +1,11 @@
 #importing pygame
 import pygame
+
+
 #intialise the pygame  at begin of the program
 pygame.init()
+
+
 # create a window  what we draw on
 #here u have to give the size of window 
 win=pygame.display.set_mode((500,480))
