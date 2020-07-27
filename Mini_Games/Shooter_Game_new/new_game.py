@@ -9,6 +9,7 @@ pygame.init()
 # create a window  what we draw on
 #here u have to give the size of window 
 win=pygame.display.set_mode((500,480))
+
 # to give caption on the window screen 
 pygame.display.set_caption("New Game")
 #few attributes of our chachters
