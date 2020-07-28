@@ -1,4 +1,5 @@
 function init(){
+    
     //docment object is directly accissble in js code
     // we can find canavs obj by its id "mycnavas"
     var canvas = document.getElementById('mycanvas');
