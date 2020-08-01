@@ -3,6 +3,9 @@ import pyaudio
 
 
 
+
+
+
 r=sr.Recognizer()#this willl recognise our audio 
 
 with sr.Microphone() as source:#here we are intialisng our source to microphone we can also intialise to some file 
