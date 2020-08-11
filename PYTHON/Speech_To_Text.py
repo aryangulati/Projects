@@ -8,6 +8,7 @@ with sr.Microphone() as source:#here we are intialisng our source to microphone 
     print("Hey Do You wanna Speak I am listening : ")
     audio =r.listen(source) #listening to source and saving it to audio
     try:
+        
         text =r.recognize_google_cloud(audio) #recogniser here will convert audio into text part
         print("Ohh I recorded your voice as text :{}".fromat(text))
     except:
