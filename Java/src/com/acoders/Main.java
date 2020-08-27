@@ -4,6 +4,8 @@ package com.acoders;// package has classes
 import java.sql.SQLOutput;
 import java.util.Scanner;
 
+
+
 public class Main { //class has many method to run code
     //class name is same as program name
     public static void main(String[] args) {
