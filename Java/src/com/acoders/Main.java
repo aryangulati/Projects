@@ -134,7 +134,7 @@ public class Main { //class has many method to run code
 
         //STRING
         String name="Aryan" +" Gulati";
-        String work = "Code in Java";
+        String work = " Code in Java";
         System.out.println(name);
         //java string methods
         System.out.println(name.length());
@@ -162,7 +162,7 @@ public class Main { //class has many method to run code
         System.out.println(Math.random());
         System.out.println(Math.abs(-36));
         System.out.println(Math.abs(6));
-        System.out.println(Math.sqrt(141));
+        System.out.println(Math.sqrt(144));
 
         //generating random number between some number or
         //genrating b/w 1,9
@@ -173,6 +173,10 @@ public class Main { //class has many method to run code
         System.out.println(1+(9-1)*Math.random());
         System.out.println(1+(9-1)*Math.random());
         System.out.println(1+(9-1)*Math.random());
+
+
+        //If-else Condition
+
 
 
 
