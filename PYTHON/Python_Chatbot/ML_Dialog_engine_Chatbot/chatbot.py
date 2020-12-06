@@ -1,0 +1,2 @@
+from chatterbot import chatterbot
+from chatterbot.trainers import ChatterBotCorpus
