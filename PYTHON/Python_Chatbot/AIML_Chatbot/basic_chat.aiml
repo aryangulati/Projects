@@ -1,0 +1,30 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+<category>
+<pattern>
+hello
+</pattern>
+<template>
+hello,how are you
+</template>
+</category>
+
+<category>
+<pattern>
+hello *
+</pattern>
+<template>
+hello,how are you
+</template>
+</category>
+
+<category>
+<pattern>
+what is your name
+</pattern>
+<template>
+my name is AIML bot 
+</template>
+</category>
+
+</aiml>
