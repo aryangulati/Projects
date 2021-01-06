@@ -32,7 +32,6 @@ while True:
         cv2.imshow("Absolute diffrence b/w both the frames",frame1)  
 
 
-
     
     if cv2.waitKey(10)==ord("q"):
         break
