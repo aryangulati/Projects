@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+    </head>
+    
+    <body>
+        <template>
+            <h5>
+                This is a template
+                <small>Hi</small>
+            </h5>
+        </template>
+    
+        <script>
+            const template = document.querySelector('template')
+            const content = template.content.cloneNode()
+            document.body.append(content)
+        </script>
+    </body>
+    </html>
+
+
