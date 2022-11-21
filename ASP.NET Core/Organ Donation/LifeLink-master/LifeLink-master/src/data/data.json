@@ -1,0 +1,168 @@
+{
+  "Header": {
+    "title": "LinkLife",
+    "paragraph": ""
+  },
+  "About": {
+    "paragraph": "LifeLink is a nonprofit organization leading its partners and increasing the number of donated organs, eyes and tissues available to save and heal lives through transplantation while developing a culture where donation is embraced as a fundamental human responsibility.",
+    "Why": [
+      "Contributions from individuals",
+      "excellent reports",
+      "Education programs"
+    ],
+    "Why2": [
+      "non-profit organization",
+      "mobile-friendly Management",
+      "lifesaving transplant"
+    ]
+  },
+  "Gallery": [
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/01-large.jpg",
+      "smallImage": "img/portfolio/01-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/02-large.jpg",
+      "smallImage": "img/portfolio/02-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/03-large.jpg",
+      "smallImage": "img/portfolio/03-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/04-large.jpg",
+      "smallImage": "img/portfolio/04-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/05-large.jpg",
+      "smallImage": "img/portfolio/05-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/06-large.jpg",
+      "smallImage": "img/portfolio/06-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/07-large.jpg",
+      "smallImage": "img/portfolio/07-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/08-large.jpg",
+      "smallImage": "img/portfolio/08-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/09-large.jpg",
+      "smallImage": "img/portfolio/09-small.jpg"
+    }
+  ],
+  "Services": [
+    {
+      "icon": "fa fa-eye",
+      "name": "Eyes",
+      "text": "Currently Available : 10"
+    },
+    {
+      "icon": "fa fa-heartbeat",
+      "name": "Hearts",
+      "text": "Currently Available : 5"
+    },
+    {
+      "icon": "fa fa-male",
+      "name": "Complete Body",
+      "text": "Currently Available : 3"
+    }
+  ],
+  "Testimonials": [
+    {
+      "img": "img/p1.jpg",
+      "text": "\"donating a kidney had made me more aware of my health. Now  I want to eat more healthily or drink less alcohol.In That LifeLink help me out to understand this think.\"",
+      "name": "Amit Jain"
+    },
+    {
+      "img": "img/p2.jpg",
+      "text": "\"the experience of donating a organ had been extremely enriching and that I had, quite unexpectedly, gained a lot from it.LifeLink is working very great in that situtaion.\"",
+      "name": "Priyanka Sharma"
+    },
+    
+    {
+      "img": "img/testimonials/04.jpg",
+      "text": "\"My body has been changed. I have become smart now. I could not work too much before the transplantation, but I do whatever I want without becoming tired..\"",
+      "name": "Katti Dope"
+    },
+    {
+      "img": "img/p3.jfif",
+      "text": "\"I felt that I was young. I was 50 years old, but I felt I was 25 years old after a dicided to donate organs it a very good think i advise all to do that.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/06.jpg",
+      "text": "\"I have positive thoughts and I feel that I am in peace and patiently follow my problems to be solved. I have become quite soft and put aside my anger and deal with my wife pretty well..\"",
+      "name": "Ravi karma"
+    },
+    {
+      "img": "img/testimonials/03.jpg",
+      "text": "\"I advised others to think about living donation and organ donation.LifeLink also aware proples to donate organs for others who need it so much.\"",
+      "name": "sam mailuer"
+    }
+  ],
+  "Team": [
+    {
+      "img": "img/team/01.jpg",
+      "name": "John Doe",
+      "job": "Director"
+    },
+    {
+      "img": "img/team/02.jpg",
+      "name": "Mike Doe",
+      "job": "Senior Designer"
+    },
+    {
+      "img": "img/team/03.jpg",
+      "name": "Jane Doe",
+      "job": "Senior Designer"
+    },
+    {
+      "img": "img/team/04.jpg",
+      "name": "Karen Doe",
+      "job": "Project Manager"
+    }
+  ],
+  "Contact": {
+    "address": " ICC Trade Tower, Senapati Bapat Rd, Shivajinagar, Pune",
+    "phone": "+91 9165391983",
+    "email": "nikhilgupta02100@gmail.com",
+    "facebook": "https://www.facebook.com/Cognizant/",
+    "twitter": "https://twitter.com/Cognizant?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+    "youtube": "https://www.youtube.com/cognizant"
+  },
+  "Features": [
+    {
+      "icon": "fa fa-comments-o",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    },
+    {
+      "icon": "fa fa-bullhorn",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    },
+    {
+      "icon": "fa fa-group",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    },
+    {
+      "icon": "fa fa-magic",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    }
+  ]
+}
